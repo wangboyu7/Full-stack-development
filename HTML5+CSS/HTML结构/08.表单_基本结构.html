@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单_基本结构</title>
+</head>
+<body>
+    <!--表单侧重收集提交数据-->
+    <!--百度如果需要通过表单的方式联系需要在后面加上/s，直接给搜索结果-->
+    <form action="https://www.baidu.com/s">
+    <!--百度网址设置name需要=wd-->
+        <input type="text" name="wd">
+        <button>去百度搜索</button>
+    </form>
+    <!--京东如果需要通过表单的方式联系需要在后面加上/search，直接给搜索结果-->
+    <form action="https://search.jd.com/search" target="_blank" method="post">
+        <!--京东网址设置name需要=keyword-->
+        <input type="text" name="keyword">
+        <button>去京东搜索</button>
+    </form>
+    <a href="https://search.jd.com/search?keyword=手机">搜索手机</a>
+</body>
+</html>

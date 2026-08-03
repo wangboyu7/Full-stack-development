@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单_label标签</title>
+</head>
+<body>
+    <!--label标签为关联焦点效果，实现提示文字与真正表单控件之间的关联，按钮不需要做关联-->
+    <!--action值不确定可先用xxx占位-->
+    <form action="https://search.jd.com/search">
+        <!--主要信息-->
+        <fieldset>
+            <legend>主要信息</legend>
+            <!--文本输入框-->
+            <!--label使用方式一-->
+            <label for="zhanghu">账户：</label>
+            <input id="zhanghu" type="text" name="account" value="name" maxlength="10"><br>
+            <!--密码输入框-->
+            <!--label使用方式二-->
+            <label>
+                密码：
+                <input type="password" name="pwd" maxlength="6"><br>
+            </label>
+            <!--单选框-->
+            性别：
+            <!--点击汉字也能选中-->
+            <label for="man">男</label>
+            <input id="man" type="radio" name="gender" value="male">
+            <label>
+                <input type="radio" name="gender" value="female" id="nv">女
+            </label>
+        </fieldset>
+        <br>
+        <!--多选框-->
+        <fieldset>
+            <legend>附加信息</legend>
+            爱好：
+            <label>
+                <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="drink">喝酒
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="perm">烫头
+            </label>
+            <br>
+            <!--文本域-->
+            <label for="qita">其他：</label>
+            <textarea name="other" id="qita" cols="23" rows="3"></textarea><br>
+            <!--下拉框-->
+            籍贯：
+            <select name="place">
+                <option value="冀">河北</option>
+                <option value="鲁" selected>山东</option>
+                <option value="晋">山西</option>
+                <option value="粤">广东</option>
+            </select>
+        </fieldset>
+        <!--隐藏域，携带一些用户不可见的固定数据，防止最基础的非非法请求-->
+        <input type="hidden" name="from" value="toutiao">
+        <br>
+        <!--确认按钮_第一种写法-->
+        <button type="submit">确认</button>
+        <!--确认按钮_第二种写法-->
+        <!--<input type="submit" value="确认">-->
+        <!--重置按钮_第一种写法-->
+        <!--<button type="reset">重置</button>-->
+        <!--重置按钮_第二种写法-->
+        <input type="reset" value="点我重置">
+        <!--普通按钮_第一种写法-->
+        <button type="button">检测账户是否被注册</button>
+        <!--普通按钮_第二种写法-->
+        <!--<input type="button" value="检测账户是否被注册">-->
+    </form>
+</body>
+</html>
