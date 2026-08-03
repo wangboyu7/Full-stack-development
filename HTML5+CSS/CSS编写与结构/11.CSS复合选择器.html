@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css复合选择器</title>
+    <style>
+        /*交集选择器*/
+        .rich {
+            color: gold;
+        }
+        .beauty {
+            color: red;
+        }
+        p.beauty{
+            color: green;
+        }
+        .rich.beauty{
+            color: orange;
+        }
+        /*并集选择器*/
+        .morerich {
+            color: gold;
+        }
+        .verybeauty {
+            color: red;
+        }
+        p.dog{
+            color: blue;
+        }
+        .pig{
+            color: green;
+        }
+        .morerich,
+        .verybeauty,
+        .dog,
+        .suxi,
+        .pig {
+            font-size: 40px;
+            background-color: gray;
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <!--交集选择器-->
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2 class="rich beauty">土豪明星王五</h2>
+    <hr>
+    <p class="beauty">小狗旺财</p>
+    <p class="beauty">小猪佩奇</p>
+    <!--并集选择器-->
+    <h2 class="morerich">土豪张三</h2>
+    <h2 class="verybeauty">明星李四</h2>
+    <h2 class="">土豪明星王五</h2>
+    <hr>
+    <p class="dog">小狗旺财</p>
+    <p class="pig">小猪佩奇</p>
+    <p class="suxi">小羊苏西</p>
+</body>
+</html>
