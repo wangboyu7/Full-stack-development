@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>语言伪类</title>
+    <style>
+        div:lang(en) {
+            color: red;
+        }
+        /*单独修改在“:lang”前面加元素，如“div:lang”*/
+        :lang(zh-CN) {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>尚硅谷1</div>
+    <div lang="en">尚硅谷2</div>
+    <p>前端</p>
+    <span>你好</span>
+</body>
+</html>
